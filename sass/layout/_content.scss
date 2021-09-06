@@ -1,0 +1,120 @@
+html {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+}
+
+.main_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  max-width: 1150px;
+  @include mobile {
+    flex-direction: column;
+  }
+  .picture {
+    img {
+      width: 15em;
+      border: 0.5em solid white;
+      border-radius: 50%;
+      animation: appears-img 3s ease-out forwards;
+    }
+  }
+  .hello-text {
+    margin-left: 2em;
+    animation: appears-text 2s ease-out forwards;
+    .hello {
+      font-size: 3em;
+    }
+    .text {
+      font-size: 2em;
+    }
+  }
+  .form-contact {
+    .form-control {
+      width: 100%;
+      margin-bottom: 1em;
+      padding: 1em;
+      background-color: rgba($color: #fff, $alpha: 0.2);
+      border-radius: 0.5em;
+      height: 2.5em;
+      border: 1px solid #fff;
+    }
+    .form-text {
+      height: 6em;
+    }
+    .btn {
+      width: 100%;
+      height: 2.5em;
+      border-radius: 0.5em;
+      background-color: $color-secondary;
+      border: 1px solid #fff;
+      &:hover {
+        background-color: $color-accent;
+        cursor: pointer;
+      }
+    }
+  }
+  @include mobile {
+    .hello-text {
+        margin: 2em 0 0 0;
+        text-align: center;
+      }
+      .form-contact {
+        margin: 2em 0 0 0;
+      }
+  }
+}
+.contact-page {
+    flex-direction: row-reverse;
+    .picture {
+        img {
+            animation: appears-img-cnt 1.5s cubic-bezier(.4,.45,.02,.95) forwards;
+        }
+    }
+    .form-contact {
+        margin-right: 4em;
+        opacity: 0;
+        animation: appears-form 2s ease-out forwards;
+        animation-delay: 1.5s;
+    }
+}
+
+
+//Projets
+main {
+  width: 100vw;
+  max-width: 1150px;
+  z-index: 0;
+}
+.project_container {
+  scroll-snap-type: y mandatory;
+}
+.project {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  scroll-snap-align: start;
+  img {
+    height: 20em;
+    border-radius: 2em;
+    margin: 0 2em;
+  }
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+.social {
+  text-align: center;
+  i {
+    font-size: 2.5em;
+    margin: 1em 2em;
+    &:hover {
+      color: $color-accent;
+    }
+  }
+}
