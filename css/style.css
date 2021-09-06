@@ -366,6 +366,21 @@ html {
           flex-direction: row-reverse;
 }
 
+@media screen and (max-width: 750px) {
+  .contact-page {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .contact-page .picture img {
   -webkit-animation: appears-img-cnt 1.5s cubic-bezier(0.4, 0.45, 0.02, 0.95) forwards;
           animation: appears-img-cnt 1.5s cubic-bezier(0.4, 0.45, 0.02, 0.95) forwards;
@@ -378,6 +393,12 @@ html {
           animation: appears-form 2s ease-out forwards;
   -webkit-animation-delay: 1.5s;
           animation-delay: 1.5s;
+}
+
+@media screen and (max-width: 750px) {
+  .contact-page .form-contact {
+    margin: 1em 0;
+  }
 }
 
 main {
@@ -402,10 +423,38 @@ main {
   scroll-snap-align: start;
 }
 
+@media screen and (max-width: 750px) {
+  .project {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .project_text {
+    width: 90vw;
+  }
+}
+
 .project img {
   height: 20em;
   border-radius: 2em;
   margin: 0 2em;
+}
+
+@media screen and (max-width: 750px) {
+  .project img {
+    width: 70vw;
+    height: auto;
+  }
 }
 
 .reverse {
@@ -413,6 +462,21 @@ main {
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
+}
+
+@media screen and (max-width: 750px) {
+  .reverse {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .social {
