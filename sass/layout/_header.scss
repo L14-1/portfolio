@@ -35,6 +35,10 @@ header {
 }
 /* header */
 
+.header-container {
+  position: relative;
+  max-width: 1250px;
+}
 .header ul {
   position: absolute;
   top: -0.5em;
@@ -142,5 +146,15 @@ header {
   }
   .header .menu-icon {
     display: none;
+  }
+}
+
+@media (max-width: 48em) {
+  .header li a {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  .header .menu {
+    margin-top: 3.55em;
+    width: 100vw;
   }
 }
