@@ -1,116 +1,172 @@
-html {
-  background-color: black;
+body {
+  background: $color-fifth;
+  max-width: 1300px;
+  position: relative;
+  margin: auto;
+  // border: 5px solid black;
   display: flex;
-  justify-content: center;
-}
-
-.main_container {
-  display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  height: 100vh;
-  width: 100vw;
-  max-width: 1150px;
-  @include mobile {
-    flex-direction: column;
-  }
-  .picture {
-    img {
-      width: 15em;
-      border: 0.5em solid white;
-      border-radius: 50%;
-      animation: appears-img 3s ease-out forwards;
-    }
-  }
-  .hello-text {
-    margin-left: 2em;
-    animation: appears-text 2s ease-out forwards;
-    .hello {
-      font-size: 3em;
-    }
-    .text {
-      font-size: 2em;
-    }
-  }
-  .form-contact {
-    .form-control {
-      width: 100%;
-      margin-bottom: 1em;
-      padding: 1em;
-      background-color: rgba($color: #fff, $alpha: 0.2);
-      border-radius: 0.5em;
-      height: 2.5em;
-      border: 1px solid #fff;
-    }
-    .form-text {
-      height: 6em;
-    }
-    .btn {
-      width: 100%;
-      height: 2.5em;
-      border-radius: 0.5em;
-      background-color: $color-secondary;
-      border: 1px solid #fff;
-      &:hover {
-        background-color: $color-accent;
-        cursor: pointer;
-      }
-    }
-  }
-  @include mobile {
-    .hello-text {
-        margin: 2em 0 0 0;
-        text-align: center;
-      }
-      .form-contact {
-        margin: 2em 0 0 0;
-      }
-  }
-}
-.contact-page {
-    flex-direction: row-reverse;
-    @include mobile {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-    .picture {
-        img {
-            animation: appears-img-cnt 1.5s cubic-bezier(.4,.45,.02,.95) forwards;
-        }
-    }
-    .form-contact {
-        margin-right: 4em;
-        opacity: 0;
-        animation: appears-form 2s ease-out forwards;
-        animation-delay: 1.5s;
-        @include mobile {
-          margin: 1em 0;
-        }
-    }
-}
-
-
-//Projets
-main {
-  width: 100vw;
-  max-width: 1150px;
+  overflow-x: hidden;
   z-index: 0;
 }
+
+.c1 {
+  background-color: $color-accent;
+  width: 35vw;
+  height: 35vw;
+  max-width: 25rem;
+  max-height: 25rem;
+  min-width: 20rem;
+  min-height: 20rem;
+  top: 2rem;
+  left: -10rem;
+}
+
+.c2 {
+  background-color: $color-primary;
+  width: 25vw;
+  height: 25vw;
+  max-width: 20rem;
+  max-height: 20rem;
+  min-width: 15rem;
+  min-height: 15rem;
+  top: 35rem;
+  right: -2vw;
+}
+
+.c3 {
+  background-color: $color-secondary;
+  width: 35vw;
+  height: 35vw;
+  max-width: 30rem;
+  max-height: 30rem;
+  min-width: 23rem;
+  min-height: 23rem;
+  top: 65rem;
+  left: 10vw;
+}
+
+.c4 {
+  background-color: $color-accent;
+  width: 28vw;
+  height: 28vw;
+  max-width: 25rem;
+  max-height: 25rem;
+  min-width: 15rem;
+  min-height: 15rem;
+  top: 95rem;
+  right: 5vw;
+}
+
+.c5 {
+  background-color: $color-fourth;
+  width: 35vw;
+  height: 35vw;
+  max-width: 25rem;
+  max-height: 25rem;
+  min-width: 20rem;
+  min-height: 20rem;
+  bottom: 0;
+  left: -2rem;
+}
+
+.circle {
+  z-index: -1;
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.3;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 8px 30px 0 rgba(31, 38, 135, 0.37);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+
+  .main_container {
+    z-index: 10;
+    padding: 3rem 0;
+    margin: 7rem 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90vw;
+    max-width: 1150px;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(7px);
+    border-radius: 2em;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    @include mobile {
+      flex-direction: column;
+    }
+    .picture {
+      img {
+        width: 15em;
+        border: 0.5em solid rgba(255, 255, 255, 0.25);
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        border-radius: 50%;
+        animation: appears-img 3s ease-out forwards;
+      }
+    }
+    .hello-text {
+      margin-left: 2em;
+      animation: appears-text 2s ease-out forwards;
+      @include mobile {
+        margin-left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .hello {
+        font-size: 3em;
+      }
+      .text {
+        font-size: 2em;
+      }
+    }
+  }
+}
+
+//Projets
+
 .project_container {
   scroll-snap-type: y mandatory;
 }
 .project {
-  height: 100vh;
+  height: 50vh;
+  width: 90vw;
+  max-width: 1300px;
   display: flex;
   align-items: center;
   scroll-snap-align: start;
+  margin-top: 3em;
   @include mobile {
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4.5px);
+    border-radius: 2em;
+    border: 1px solid rgba(255, 255, 255, 0.18);
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
   &_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 1em;
+    @include notMobile {
+      background: rgba(255, 255, 255, 0.15);
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+      backdrop-filter: blur(4.5px);
+      border-radius: 2em;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+    }
+    height: 20em;
     @include mobile {
       width: 90vw;
     }
@@ -118,9 +174,14 @@ main {
   img {
     height: 20em;
     border-radius: 2em;
-    margin: 0 2em;
+    // margin: 2em 2em 0 2em;
+    @include notMobile {
+      margin: 0 2em;
+    }
     @include mobile {
+      margin-top: 2em;
       width: 70vw;
+      max-width: 25rem;
       height: auto;
     }
   }
@@ -135,13 +196,29 @@ main {
   }
 }
 
-.social {
-  text-align: center;
-  i {
-    font-size: 2.5em;
-    margin: 1em 2em;
-    &:hover {
-      color: $color-accent;
+footer {
+  width: 50rem;
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  margin: 5rem 0;
+  @include mobile {
+    width : 90vw;
+  }
+  .social {
+    text-align: center;
+    i {
+      color: rgba(255, 255, 255, 0.8);
+      font-size: 2.5em;
+      margin: 1em 2em;
+      @include mobile {
+        margin: 1em 1em;
+      }
+      &:hover {
+        color: $color-accent;
+      }
     }
   }
 }
