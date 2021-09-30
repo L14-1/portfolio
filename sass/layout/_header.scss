@@ -1,7 +1,6 @@
 header {
-  z-index: 50;
+  z-index: 20;
   position: fixed;
-  z-index: 10;
   top: 1em;
   left: 50%;
   transform: translate(-50%, 0);
@@ -23,7 +22,7 @@ header {
         position: relative;
         font-size: 2em;
         margin-right: 0.4em;
-        z-index: 0;
+        // z-index: 0;
         color: $color-accent;
         &::after {
           content: "";

@@ -14,9 +14,8 @@ html {
 }
 
 header {
-  z-index: 50;
+  z-index: 20;
   position: fixed;
-  z-index: 10;
   top: 1em;
   left: 50%;
   -webkit-transform: translate(-50%, 0);
@@ -55,7 +54,6 @@ header .header-container .logo_left {
   position: relative;
   font-size: 2em;
   margin-right: 0.4em;
-  z-index: 0;
   color: #E8B9AB;
 }
 
@@ -80,6 +78,7 @@ html {
 }
 
 body {
+  z-index: 0;
   background: #26F0F1;
   max-width: 1300px;
   position: relative;
@@ -94,7 +93,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  z-index: 0;
 }
 
 .c1 {
@@ -183,6 +181,7 @@ main {
 }
 
 main .main_container {
+  position: relative;
   z-index: 10;
   padding: 3rem 0;
   margin: 7rem 0 0 0;
@@ -268,11 +267,6 @@ main .main_container .hello-text .text {
   }
 }
 
-.project_container {
-  -ms-scroll-snap-type: y mandatory;
-      scroll-snap-type: y mandatory;
-}
-
 .project {
   height: 50vh;
   width: 90vw;
@@ -306,7 +300,6 @@ main .main_container .hello-text .text {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    padding-top: 2rem;
   }
 }
 
@@ -321,8 +314,7 @@ main .main_container .hello-text .text {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-left: 1em;
-  height: 20em;
+  margin-left: 0.5em;
 }
 
 @media screen and (min-width: 900px) {
@@ -334,6 +326,7 @@ main .main_container .hello-text .text {
             backdrop-filter: blur(4.5px);
     border-radius: 2em;
     border: 1px solid rgba(255, 255, 255, 0.18);
+    height: 20em;
   }
 }
 
