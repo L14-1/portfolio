@@ -46,8 +46,8 @@ body {
   height: 35vw;
   max-width: 30rem;
   max-height: 30rem;
-  min-width: 23rem;
-  min-height: 23rem;
+  min-width: 17rem;
+  min-height: 17rem;
   top: 65rem;
   left: 10vw;
 }
@@ -136,6 +136,7 @@ main {
         font-size: 2em;
         @include mobile {
           font-size: 1.5rem;
+          margin-left: 1rem;
         }
       }
     }
@@ -164,6 +165,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-top: 2rem;
   }
   &_text {
     display: flex;
@@ -190,7 +192,7 @@ main {
       margin: 0 2em;
     }
     @include mobile {
-      margin-top: 2em;
+      // margin-top: 2rem;
       width: 70vw;
       max-width: 25rem;
       height: auto;
