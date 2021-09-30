@@ -74,6 +74,11 @@ header .header-container .logo_right {
   color: #E8B9AB;
 }
 
+html {
+  overflow-x: hidden;
+  width: 100vw;
+}
+
 body {
   background: #26F0F1;
   max-width: 1300px;
@@ -89,7 +94,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  overflow-x: hidden;
   z-index: 0;
 }
 
@@ -114,7 +118,7 @@ body {
   min-width: 15rem;
   min-height: 15rem;
   top: 35rem;
-  right: -2vw;
+  right: 0;
 }
 
 .c3 {
@@ -247,8 +251,20 @@ main .main_container .hello-text .hello {
   font-size: 3em;
 }
 
+@media screen and (max-width: 900px) {
+  main .main_container .hello-text .hello {
+    font-size: 2rem;
+  }
+}
+
 main .main_container .hello-text .text {
   font-size: 2em;
+}
+
+@media screen and (max-width: 900px) {
+  main .main_container .hello-text .text {
+    font-size: 1.5rem;
+  }
 }
 
 .project_container {
@@ -397,7 +413,7 @@ footer .social i {
 
 @media screen and (max-width: 900px) {
   footer .social i {
-    margin: 1em 1em;
+    margin: 1em 0.2em;
   }
 }
 
