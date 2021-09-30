@@ -1,0 +1,109 @@
+// .topLeft {
+//     top: 85rem;
+//     right: 10vw;
+// }
+
+// .top {
+//     top: 75rem;
+//     right: 6vw;
+// }
+
+// .topRight {
+//     top: 90rem;
+//     right: 4vw;
+// }
+
+@keyframes floatingC4 {
+    0%   {
+        top: 95rem;
+        right: 5vw;
+    }
+    25%  {
+        top: 85rem;
+        right: 20vw;
+    }
+    50%  {
+        top: 95rem;
+        right: 15vw;
+    }
+    100% {
+        top: 85rem;
+        right: 5vw;
+    }
+}
+
+@keyframes floatingC1 {
+    0%   {
+        top: 2rem;
+        left: -10rem;
+    }
+    25%  {
+        top: 8rem;
+        left: 13vw;
+    }
+    50%  {
+        top: 16rem;
+        left: 6vw;
+    }
+    100% {
+        top: 0;
+        left: 2vw;
+    }
+}
+
+@keyframes floatingC2 {
+    0%   {
+        top: 35rem;
+        right: 0;
+    }
+    25%  {
+        top: 40rem;
+        right: 15vw;
+    }
+    50%  {
+        top: 55rem;
+        right: 20vw;
+    }
+    100% {
+        top: 45rem;
+        right: 10vw;
+    }
+}
+
+@keyframes floatingC3 {
+    0%   {
+        top: 65rem;
+        left: 10vw;
+    }
+    25%  {
+        top: 58rem;
+        left: 22vw;
+    }
+    50%  {
+        top: 47rem;
+        left: 12vw;
+    }
+    100% {
+        top: 54rem;
+        left: 3vw;
+    }
+}
+
+@keyframes floatingC5 {
+    0%   {
+        bottom: 0;
+        left: -2rem;;
+    }
+    25%  {
+        bottom: 30rem;
+        left: 40vw;
+    }
+    50%  {
+        bottom: 55rem;
+        left: 19vw;
+    }
+    100% {
+        bottom: 32rem;
+        left: 8vw;
+    }
+}

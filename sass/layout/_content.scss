@@ -17,7 +17,7 @@ body {
 }
 
 .c1 {
-  background-color: $color-accent;
+  background-color: $color-fifth;
   width: 35vw;
   height: 35vw;
   max-width: 25rem;
@@ -26,6 +26,7 @@ body {
   min-height: 20rem;
   top: 2rem;
   left: -10rem;
+  animation: floatingC1 20s ease-in-out 1s infinite alternate;
 }
 
 .c2 {
@@ -38,6 +39,7 @@ body {
   min-height: 15rem;
   top: 35rem;
   right: 0;
+  animation: floatingC2 16s ease-in-out 1s infinite alternate;
 }
 
 .c3 {
@@ -50,6 +52,7 @@ body {
   min-height: 17rem;
   top: 65rem;
   left: 10vw;
+  animation: floatingC3 17s ease-in-out 1s infinite alternate;
 }
 
 .c4 {
@@ -62,10 +65,11 @@ body {
   min-height: 15rem;
   top: 95rem;
   right: 5vw;
+  animation: floatingC4 15s ease-in-out 1s infinite alternate;
 }
 
 .c5 {
-  background-color: $color-fourth;
+  background-color: $color-fifth;
   width: 35vw;
   height: 35vw;
   max-width: 25rem;
@@ -74,6 +78,7 @@ body {
   min-height: 20rem;
   bottom: 0;
   left: -2rem;
+  animation: floatingC5 25s ease-in-out 1.5s infinite alternate;
 }
 
 .circle {
@@ -115,12 +120,10 @@ main {
         border: 0.5em solid rgba(255, 255, 255, 0.25);
         box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
         border-radius: 50%;
-        animation: appears-img 3s ease-out forwards;
       }
     }
     .hello-text {
       margin-left: 2em;
-      animation: appears-text 2s ease-out forwards;
       @include mobile {
         margin-left: 0;
         display: flex;
@@ -168,6 +171,7 @@ main {
     flex-direction: column;
     justify-content: center;
     margin-left: 0.5em;
+    padding-left: 1em;
     @include notMobile {
       background: rgba(255, 255, 255, 0.15);
       box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
@@ -175,6 +179,7 @@ main {
       border-radius: 2em;
       border: 1px solid rgba(255, 255, 255, 0.18);
       height: 20em;
+      
     }
     @include mobile {
       width: 90vw;
@@ -205,29 +210,4 @@ main {
   }
 }
 
-footer {
-  width: 50rem;
-  background: rgba(255, 255, 255, 0.15);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(4.5px);
-  border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  margin: 5rem 0;
-  @include mobile {
-    width : 90vw;
-  }
-  .social {
-    text-align: center;
-    i {
-      color: rgba(255, 255, 255, 0.8);
-      font-size: 2.5em;
-      margin: 1em 2em;
-      @include mobile {
-        margin: 1em 0.2em;
-      }
-      &:hover {
-        color: $color-accent;
-      }
-    }
-  }
-}
+

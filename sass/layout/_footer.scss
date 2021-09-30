@@ -1,0 +1,27 @@
+footer {
+    width: 50rem;
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4.5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    margin: 5rem 0;
+    @include mobile {
+      width : 90vw;
+    }
+    .social {
+      text-align: center;
+      i {
+        color: $color-accent;
+        font-size: 2.5em;
+        margin: 1em 2em;
+        opacity: 0.7;
+        @include mobile {
+          margin: 1em 0.2em;
+        }
+        &:hover {
+          color: $color-secondary;
+        }
+      }
+    }
+  }
