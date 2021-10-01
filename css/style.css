@@ -285,6 +285,12 @@ body {
           align-items: center;
 }
 
+@media screen and (max-width: 900px) {
+  body {
+    overflow-x: hidden;
+  }
+}
+
 .c1 {
   background-color: #CEFDFF;
   width: 35vw;
