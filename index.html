@@ -11,7 +11,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-    <link rel="shortcut icon" href="img/favicon.ico"/>
+    <link rel="shortcut icon" href="img/favicon.ico" />
     <title>Nicolas Maitre</title>
     <link rel="stylesheet" href="./css/style.css" />
 </head>
@@ -37,8 +37,8 @@
     <div class="circle c1" id="c1"></div>
     <div class="circle c2" id="c2"></div>
     <div class="circle c3" id="c3"></div>
-    <div class="circle c4" id="c4"></div>
-    <div class="circle c5" id="c5"></div>
+    <!-- <div class="circle c4" id="c4"></div> -->
+    <!-- <div class="circle c5" id="c5"></div> -->
     <main>
         <section class="main_container">
             <div class="picture">
@@ -55,7 +55,7 @@
         </section>
 
         <section class="project_container">
-            <article class="project">
+            <article class="project left" id="firstProject">
                 <div class="project_picture">
                     <a href="https://l14-1.github.io/NicolasMaitre_2_20072021/" target="_blank"><img
                             src="img/reservia.PNG" alt="capture d'ecran du projet Reservia" /></a>
@@ -70,7 +70,7 @@
                     </div>
                 </div>
             </article>
-            <article class="project reverse">
+            <article class="project middle" id="secondProject">
                 <div class="project_picture">
                     <a href="https://l14-1.github.io/NicolasMaitre_3_03082021/" target="_blank"><img
                             src="img/ohmyfood.PNG" alt="capture d'ecran du projet Reservia" /></a>
@@ -85,7 +85,7 @@
                     </div>
                 </div>
             </article>
-            <article class="project">
+            <article class="project right" id="thirdProject">
                 <div class="project_picture">
                     <a href="index.html" target="_blank"><img src="img/portfolio.PNG"
                             alt="capture d'ecran du projet Reservia" /></a>
@@ -100,6 +100,10 @@
                     </div>
                 </div>
             </article>
+        </section>
+        <section class="arrow">
+            <button class="arrow_left" id="arrowLeft"><i class="fas fa-arrow-left"></i></button>
+            <button class="arrow_right" id="arrowRight"><i class="fas fa-arrow-right"></i></button>
         </section>
     </main>
 
