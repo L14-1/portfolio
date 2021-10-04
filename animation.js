@@ -53,7 +53,7 @@ window.addEventListener('scroll', function () {
     project = project[2]
 
     let projectPosition = project.getBoundingClientRect().top;
-    let screenPosition = window.innerHeight / 2.5;
+    let screenPosition = window.innerHeight / 2;
 
     if (projectPosition < screenPosition) {
         project.classList.add('active');
