@@ -1,48 +1,37 @@
-let right = document.getElementById('arrowRight')
-let left = document.getElementById('arrowLeft')
-let first = document.getElementById('firstProject')
-let second = document.getElementById('secondProject')
-let third = document.getElementById('thirdProject')
+// let circle1 = document.getElementById('c1')
+// let circle2 = document.getElementById('c2')
+// let circle3 = document.getElementById('c3')
+// let circle4 = document.getElementById('c4')
+// let circle5 = document.getElementById('c5')
 
+// let delay = 1500;
 
-left.addEventListener("click", function () {
-    if (second.getAttribute('class') === "project middle") {
-        first.className = 'project middle'
-        second.className = 'project right'
-        third.className = 'project right'
-    }
-    else if (third.getAttribute('class') === "project middle") {
-        first.className = 'project left'
-        second.className = 'project middle'
-        third.className = 'project right'
-    }
-})
+// function anim() {
+//     circle4.className = 'circle c4 topLeft'
+//     console.log('lol1');
+//     setTimeout(function() {
+//         console.log('lol2');
+//         circle4.className = 'circle c4 top'
+//       }, delay);
+//       setTimeout(function() {
+//         circle4.className = 'circle c4 topRight'
+//         console.log('lol3');
+//       }, delay);
+//       setTimeout(function() {
+//         circle4.className = 'circle c4'
+//         console.log('lol4');
+//       }, delay);
+// }
 
-right.addEventListener("click", function () {
-    if (first.getAttribute('class') === "project middle") {
-        first.className = 'project left'
-        second.className = 'project middle'
-        third.className = 'project right'
-    }
-    else if (second.getAttribute('class') === "project middle") {
-        first.className = 'project left'
-        second.className = 'project left'
-        third.className = 'project middle'
-    }
-})
-
-
-
-let footer = document.getElementById('footer')
-let contactText = document.getElementById('contactText')
-let social = document.getElementById('social')
-
-footer.addEventListener("mouseover", function () {
-    contactText.className = ('topP')
-    social.className = ('social socialAppears')
-})
-
-footer.addEventListener("mouseout", function () {
-    contactText.className = ('')
-    social.className = ('social')
-})
+// anim()
+// anim()
+// anim()
+// anim()
+// anim()
+// anim()
+// anim()
+// anim()
+// anim()
+// anim()
+// anim()
+// anim()

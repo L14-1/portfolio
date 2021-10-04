@@ -93,17 +93,6 @@ body {
   box-shadow: 0 8px 30px 0 rgba(31, 38, 135, 0.37);
 }
 
-h1, h2, h3 {
-  color: $color-accent;
-}
-
-h2 {
-  margin-top: 8rem;
-  width: 90vw;
-  max-width: 1300px;
-  font-size: 3rem;
-}
-
 main {
   display: flex;
   flex-direction: column;
@@ -162,64 +151,60 @@ main {
 }
 
 //Projets
-.project_container {
-  display: flex;
-  margin: auto;
+.project {
+  height: 50vh;
   width: 90vw;
   max-width: 1300px;
-  height: 25rem;
-  position: relative;
+  display: flex;
   align-items: center;
-  .project {
-    position: absolute;
-    width: 90vw;
-    max-width: 1300px;
+  scroll-snap-align: start;
+  margin-top: 3em;
+  @include mobile {
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4.5px);
+    border-radius: 2em;
+    border: 1px solid rgba(255, 255, 255, 0.18);
     display: flex;
-    align-items: center;
-    scroll-snap-align: start;
-    @include mobile {
+    flex-direction: column;
+    justify-content: center;
+  }
+  &_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 0.5em;
+    padding-left: 1em;
+    @include notMobile {
       background: rgba(255, 255, 255, 0.15);
       box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
       backdrop-filter: blur(4.5px);
       border-radius: 2em;
       border: 1px solid rgba(255, 255, 255, 0.18);
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-    &_text {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      margin-left: 0.5em;
-      padding-left: 1em;
-      @include notMobile {
-        background: rgba(255, 255, 255, 0.15);
-        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-        backdrop-filter: blur(4.5px);
-        border-radius: 2em;
-        border: 1px solid rgba(255, 255, 255, 0.18);
-        height: 20em;
-      }
-      @include mobile {
-        width: 90vw;
-      }
-    }
-    img {
       height: 20em;
-      border-radius: 2em;
-      // margin: 2em 2em 0 2em;S
-      @include mobile {
-        // margin-top: 2rem;
-        width: 70vw;
-        max-width: 25rem;
-        height: auto;
-      }
+      
+    }
+    @include mobile {
+      width: 90vw;
+    }
+  }
+  img {
+    height: 20em;
+    border-radius: 2em;
+    // margin: 2em 2em 0 2em;
+    @include notMobile {
+      margin: 0 2em;
+    }
+    @include mobile {
+      // margin-top: 2rem;
+      width: 70vw;
+      max-width: 25rem;
+      height: auto;
     }
   }
 }
 
-#reverse {
+.reverse {
   flex-direction: row-reverse;
   @include mobile {
     display: flex;
@@ -228,48 +213,4 @@ main {
   }
 }
 
-.left {
-  transform: translate(-100vw);
-  opacity: 0;
-  transition: transform 1.5s ease-out, opacity 1.5s ease-out;
-}
 
-.middle {
-  transform: translate(0);
-  opacity: 1;
-  transition: transform 1.5s ease-out, opacity 1.5s ease-out;
-}
-
-.right {
-  transform: translate(100vw);
-  opacity: 0;
-  transition: transform 1.5s ease-out, opacity 1.5s ease-out;
-}
-
-.arrow {
-  position: relative;
-  width: 90vw;
-  max-width: 1300px;
-  i {
-    color: $color-accent;
-    font-size: 8rem;
-    @include mobile {
-      font-size: 4rem;
-    }
-  }
-  i:hover {
-    cursor: pointer;
-  }
-  &_left {
-    position: absolute;
-    left : 30%;
-    background : none;
-    border: none;
-  }
-  &_right {
-    position: absolute;
-    right : 30%;
-    background : none;
-    border: none;
-  }
-}
