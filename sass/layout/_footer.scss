@@ -19,7 +19,7 @@ footer {
     color: #e8b9ab;
     font-size: 3rem;
     width: 48rem;
-    transition: top 1s ease-out;
+    transition: top 1s ease-in-out;
     @include mobile {
       top: -25rem;
       width: 88vw;

@@ -231,6 +231,7 @@ header .header-container {
 }
 
 header .header-container .logo {
+  z-index: 21;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -481,6 +482,9 @@ main .main_container .hello-text .text {
 }
 
 .project {
+  opacity: 0;
+  -webkit-transform: translateX(-20rem);
+          transform: translateX(-20rem);
   height: 50vh;
   width: 90vw;
   max-width: 1300px;
@@ -492,6 +496,10 @@ main .main_container .hello-text .text {
           align-items: center;
   scroll-snap-align: start;
   margin-top: 3em;
+  -webkit-transition: opacity 1s ease-out, -webkit-transform 1s ease-out;
+  transition: opacity 1s ease-out, -webkit-transform 1s ease-out;
+  transition: transform 1s ease-out, opacity 1s ease-out;
+  transition: transform 1s ease-out, opacity 1s ease-out, -webkit-transform 1s ease-out;
 }
 
 @media screen and (max-width: 900px) {
@@ -591,6 +599,12 @@ main .main_container .hello-text .text {
   }
 }
 
+.active {
+  -webkit-transform: translate(0);
+          transform: translate(0);
+  opacity: 1;
+}
+
 footer {
   overflow-y: hidden;
   position: relative;
@@ -619,8 +633,8 @@ footer p {
   color: #e8b9ab;
   font-size: 3rem;
   width: 48rem;
-  -webkit-transition: top 1s ease-out;
-  transition: top 1s ease-out;
+  -webkit-transition: top 1s ease-in-out;
+  transition: top 1s ease-in-out;
 }
 
 @media screen and (max-width: 900px) {
