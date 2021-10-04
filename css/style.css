@@ -221,8 +221,15 @@ header {
           backdrop-filter: blur(2px);
   overflow: hidden;
   height: 3rem;
-  -webkit-transition: height 1s ease-out;
-  transition: height 1s ease-out;
+  -webkit-transition: height 0.2s ease-out;
+  transition: height 0.2s ease-out;
+}
+
+@media screen and (max-width: 900px) {
+  header {
+    -webkit-transition: height 0.2s ease-out, top 0.2s ease-out, width 0.2s ease-out;
+    transition: height 0.2s ease-out, top 0.2s ease-out, width 0.2s ease-out;
+  }
 }
 
 header .header-container {
@@ -367,6 +374,8 @@ header #links::before {
     height: 100vh;
     width: 100vw;
     top: 0;
+    -webkit-transition: height 1s ease-out, top 1s ease-out, width 1s ease-out;
+    transition: height 1s ease-out, top 1s ease-out, width 1s ease-out;
   }
 }
 
@@ -690,6 +699,12 @@ main .main_container .hello-text .text {
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
+  -webkit-transform: translateX(20rem);
+          transform: translateX(20rem);
+  -webkit-transition: opacity 1s ease-out, -webkit-transform 1s ease-out;
+  transition: opacity 1s ease-out, -webkit-transform 1s ease-out;
+  transition: transform 1s ease-out, opacity 1s ease-out;
+  transition: transform 1s ease-out, opacity 1s ease-out, -webkit-transform 1s ease-out;
 }
 
 @media screen and (max-width: 900px) {

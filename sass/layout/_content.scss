@@ -220,6 +220,8 @@ main {
 
 .reverse {
   flex-direction: row-reverse;
+  transform: translateX(20rem);
+  transition: transform 1s ease-out, opacity 1s ease-out;
   @include mobile {
     display: flex;
     flex-direction: column;
