@@ -4,6 +4,17 @@ html {
   width: 100vw;
 }
 
+h1, h2, h3 {
+  color: #E8B9AB;
+}
+
+h2 {
+  margin-top: 8rem;
+  width: 90vw;
+  max-width: 1300px;
+  font-size: 3rem;
+}
+
 body {
   z-index: 0;
   background: $color-fifth;

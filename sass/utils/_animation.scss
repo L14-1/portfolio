@@ -1,37 +1,3 @@
-// .topLeft {
-//     top: 85rem;
-//     right: 10vw;
-// }
-
-// .top {
-//     top: 75rem;
-//     right: 6vw;
-// }
-
-// .topRight {
-//     top: 90rem;
-//     right: 4vw;
-// }
-
-@keyframes floatingC4 {
-    0%   {
-        top: 95rem;
-        right: 5vw;
-    }
-    25%  {
-        top: 85rem;
-        right: 20vw;
-    }
-    50%  {
-        top: 95rem;
-        right: 15vw;
-    }
-    100% {
-        top: 85rem;
-        right: 5vw;
-    }
-}
-
 @keyframes floatingC1 {
     0%   {
         top: 2rem;
@@ -67,6 +33,25 @@
     100% {
         top: 45rem;
         right: 10vw;
+    }
+}
+
+@keyframes floatingC4 {
+    0%   {
+        top: 95rem;
+        right: 5vw;
+    }
+    25%  {
+        top: 85rem;
+        right: 20vw;
+    }
+    50%  {
+        top: 95rem;
+        right: 15vw;
+    }
+    100% {
+        top: 85rem;
+        right: 5vw;
     }
 }
 
