@@ -213,12 +213,16 @@ header {
   width: 95vw;
   max-width: 1500px;
   border-radius: 0.7rem;
-  background: rgba(255, 255, 255, 0.25);
+  background-color: rgba(255, 255, 255, 0.25);
   -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
           box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   border: 1px solid rgba(255, 255, 255, 0.18);
   -webkit-backdrop-filter: blur(2px);
           backdrop-filter: blur(2px);
+  overflow: hidden;
+  height: 3rem;
+  -webkit-transition: height 1s ease-out;
+  transition: height 1s ease-out;
 }
 
 header .header-container {
@@ -263,17 +267,121 @@ header .header-container .logo_right {
   color: #E8B9AB;
 }
 
+header #menu {
+  position: absolute;
+  height: 1.5rem;
+  top: 0.7rem;
+  right: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  cursor: pointer;
+}
+
+header #menu .menuBar {
+  width: 2rem;
+  height: 0.25rem;
+  border-radius: 1rem;
+  background-color: #E8B9AB;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+  opacity: 1;
+  -webkit-transition: opacity 1s ease-in, -webkit-transform 0.6s ease-in-out;
+  transition: opacity 1s ease-in, -webkit-transform 0.6s ease-in-out;
+  transition: transform 0.6s ease-in-out, opacity 1s ease-in;
+  transition: transform 0.6s ease-in-out, opacity 1s ease-in, -webkit-transform 0.6s ease-in-out;
+}
+
+header #menu .topBar {
+  -webkit-transform: rotate(40deg);
+          transform: rotate(40deg);
+  -webkit-transition: -webkit-transform 0.6s ease-in-out;
+  transition: -webkit-transform 0.6s ease-in-out;
+  transition: transform 0.6s ease-in-out;
+  transition: transform 0.6s ease-in-out, -webkit-transform 0.6s ease-in-out;
+}
+
+header #menu .middleBar {
+  opacity: 0;
+  -webkit-transition: opacity 0.1s ease-in;
+  transition: opacity 0.1s ease-in;
+}
+
+header #menu .bottomBar {
+  -webkit-transform: rotate(-40deg);
+          transform: rotate(-40deg);
+  -webkit-transition: -webkit-transform 0.6s ease-in-out;
+  transition: -webkit-transform 0.6s ease-in-out;
+  transition: transform 0.6s ease-in-out;
+  transition: transform 0.6s ease-in-out, -webkit-transform 0.6s ease-in-out;
+}
+
+header #links {
+  position: relative;
+  padding-top: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 2em;
+}
+
+header #links a {
+  color: #E8B9AB;
+}
+
+header #links::before {
+  position: absolute;
+  top: 0.5em;
+  content: "";
+  width: 80vw;
+  max-width: 1200px;
+  height: 1px;
+  background-color: #E8B9AB;
+}
+
+.headerWithMenu {
+  height: 30vh;
+  background-color: rgba(255, 255, 255, 0.7);
+  -webkit-transition: height 1s ease-out, background-color 1s ease-out;
+  transition: height 1s ease-out, background-color 1s ease-out;
+}
+
+@media screen and (max-width: 900px) {
+  .headerWithMenu {
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+  }
+}
+
 html {
   overflow-x: hidden;
   width: 100vw;
+  scroll-behavior: smooth;
 }
 
 h1, h2, h3 {
   color: #E8B9AB;
 }
 
-h2 {
-  margin-top: 8rem;
+#projects {
+  padding-top: 8rem;
   width: 90vw;
   max-width: 1300px;
   font-size: 3rem;

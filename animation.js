@@ -18,18 +18,18 @@ footer.addEventListener("mouseout", function () {
 
 
 window.addEventListener('scroll', function () {
-        let project = document.getElementsByClassName('project');
-    
-        project = project[0]
+    let project = document.getElementsByClassName('project');
 
-        let projectPosition = project.getBoundingClientRect().top;
-        let screenPosition = window.innerHeight / 2.5;
+    project = project[0]
 
-        if (projectPosition < screenPosition) {
-            project.classList.add('active');
-        } else {
-            project.classList.remove('active');
-        }
+    let projectPosition = project.getBoundingClientRect().top;
+    let screenPosition = window.innerHeight / 2.5;
+
+    if (projectPosition < screenPosition) {
+        project.classList.add('active');
+    } else {
+        project.classList.remove('active');
+    }
 })
 
 window.addEventListener('scroll', function () {
@@ -62,3 +62,41 @@ window.addEventListener('scroll', function () {
     }
 })
 
+// Hamburger menu
+
+const menu = document.getElementById('menu')
+let menuTop = document.getElementById('menuTop')
+let menuMiddle = document.getElementById('menuMiddle')
+let menuBottom = document.getElementById('menuBottom')
+let header = document.getElementById('header')
+
+menu.addEventListener('click', () => {
+
+    let cName = menuTop.className
+
+    if (cName != 'menuBar topBar') {
+
+        menuTop.classList.add('topBar');
+        menuMiddle.classList.add('middleBar');
+        menuBottom.classList.add('bottomBar');
+        header.classList.add('headerWithMenu');
+
+    } else {
+
+        menuTop.classList.remove('topBar');
+        menuMiddle.classList.remove('middleBar');
+        menuBottom.classList.remove('bottomBar');
+        header.classList.remove('headerWithMenu');
+
+    }
+
+})
+
+const links = document.getElementById('links')
+
+links.addEventListener('click', () => {
+    menuTop.classList.remove('topBar');
+    menuMiddle.classList.remove('middleBar');
+    menuBottom.classList.remove('bottomBar');
+    header.classList.remove('headerWithMenu');
+})

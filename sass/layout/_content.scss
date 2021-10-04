@@ -1,15 +1,15 @@
 html {
-  // border: 5px solid black;
   overflow-x: hidden;
   width: 100vw;
+  scroll-behavior: smooth;
 }
 
 h1, h2, h3 {
   color: #E8B9AB;
 }
 
-h2 {
-  margin-top: 8rem;
+#projects {
+  padding-top: 8rem;
   width: 90vw;
   max-width: 1300px;
   font-size: 3rem;
