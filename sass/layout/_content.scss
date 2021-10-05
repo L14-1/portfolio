@@ -27,6 +27,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  
   @include mobile {
     overflow-x: hidden;
   }
@@ -120,7 +121,6 @@ main {
       padding : 7rem 3rem 4rem 3rem;
     }
     .main_container {
-      // transform-style: preserve-3d;
       position: relative;
       padding: 3rem 0;
       display: flex;
@@ -137,7 +137,10 @@ main {
         flex-direction: column;
       }
       .picture {
+        perspective: 1000px;
+        transform-style: preserve-3d;
         img {
+          perspective-origin: top right;
           width: 15em;
           border: 0.5em solid rgba(255, 255, 255, 0.25);
           box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
@@ -145,8 +148,9 @@ main {
         }
       }
       .hello-text {
+        perspective: 1000px;
+        transform-style: preserve-3d;
         margin-left: 2em;
-        
         @include mobile {
           margin-left: 0;
           display: flex;
@@ -154,12 +158,14 @@ main {
           align-items: center;
         }
         .hello {
+          perspective-origin: top right;
           font-size: 3em;
           @include mobile {
             font-size: 2rem;
           }
         }
         .text {
+          perspective-origin: top right;
           font-size: 2em;
           @include mobile {
             font-size: 1.5rem;

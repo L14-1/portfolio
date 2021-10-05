@@ -107,27 +107,29 @@ const mainContainer = document.getElementById('main_container')
 const card = document.querySelector('.main_container')
 
 const profilePicture = document.querySelector('.picture img')
-const hello = document.querySelector('.hello-text')
+const hello = document.querySelector('.hello')
+const text = document.querySelector('.text')
 
 mainContainer.addEventListener('mousemove', (e) => {
 
-    let xAxis = (window.innerWidth / 2 - e.pageX) / 20;
-    let yAxis = (window.innerHeight / 3 - e.pageY) / 10;
+    let xAxis = (window.innerWidth / 2 - e.pageX) / 30;
+    let yAxis = (window.innerHeight / 3 - e.pageY) / 30;
     card.style.transform = "rotateY(" + (-xAxis) + "deg) rotateX(" + yAxis + "deg)";
     card.style.transition = "transform 0.5s ease-out";
+    profilePicture.style.transform = "rotateY(" + (-xAxis) + "deg) rotateX(" + yAxis + "deg) translateZ(120px)";
+    hello.style.transform = "rotateY(" + (-xAxis) + "deg) rotateX(" + yAxis + "deg) translateZ(150px)";
+    text.style.transform = "rotateY(" + (-xAxis) + "deg) rotateX(" + yAxis + "deg) translateZ(100px)";
 });
-
-// mainContainer.addEventListener('mouseenter', (e) => {
-    
-//     profilePicture.style.transform = "translateZ(700px)";
-    
-    
-// });
 
 mainContainer.addEventListener('mouseleave', (e) => {
 
     card.style.transform = "rotateY(0deg) rotateX(0deg)";
     card.style.transition = "transform 1s ease-out";
     
-    // profilePicture.style.transform = "translateZ(0px)";
+    profilePicture.style.transform = "translate(0)";
+    profilePicture.style.transition = "transform .5s ease-out";
+    hello.style.transform = "translate(0)";
+    hello.style.transition = "transform .5s ease-out";
+    text.style.transform = "translate(0)";
+    text.style.transition = "transform .5s ease-out";
 });

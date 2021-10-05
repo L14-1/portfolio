@@ -566,7 +566,16 @@ main #main_container .main_container {
   }
 }
 
+main #main_container .main_container .picture {
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
 main #main_container .main_container .picture img {
+  -webkit-perspective-origin: top right;
+          perspective-origin: top right;
   width: 15em;
   border: 0.5em solid rgba(255, 255, 255, 0.25);
   -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
@@ -575,6 +584,10 @@ main #main_container .main_container .picture img {
 }
 
 main #main_container .main_container .hello-text {
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
   margin-left: 2em;
 }
 
@@ -595,6 +608,8 @@ main #main_container .main_container .hello-text {
 }
 
 main #main_container .main_container .hello-text .hello {
+  -webkit-perspective-origin: top right;
+          perspective-origin: top right;
   font-size: 3em;
 }
 
@@ -605,6 +620,8 @@ main #main_container .main_container .hello-text .hello {
 }
 
 main #main_container .main_container .hello-text .text {
+  -webkit-perspective-origin: top right;
+          perspective-origin: top right;
   font-size: 2em;
 }
 
