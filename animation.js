@@ -112,16 +112,17 @@ const hello = document.querySelector('.hello-text')
 mainContainer.addEventListener('mousemove', (e) => {
 
     let xAxis = (window.innerWidth / 2 - e.pageX) / 20;
-    let yAxis = (window.innerHeight / 2 - e.pageY) / 10;
+    let yAxis = (window.innerHeight / 3 - e.pageY) / 10;
     card.style.transform = "rotateY(" + (-xAxis) + "deg) rotateX(" + yAxis + "deg)";
+    card.style.transition = "transform 0.5s ease-out";
 });
 
-mainContainer.addEventListener('mouseenter', (e) => {
-
-    // profilePicture.style.transform = "translateZ(700px)";
-    card.style.transition = "none";
+// mainContainer.addEventListener('mouseenter', (e) => {
     
-});
+//     profilePicture.style.transform = "translateZ(700px)";
+    
+    
+// });
 
 mainContainer.addEventListener('mouseleave', (e) => {
 
