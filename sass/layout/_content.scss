@@ -4,8 +4,10 @@ html {
   scroll-behavior: smooth;
 }
 
-h1, h2, h3 {
-  color: #E8B9AB;
+h1,
+h2,
+h3 {
+  color: #e8b9ab;
 }
 
 #projects {
@@ -109,52 +111,60 @@ main {
   flex-direction: column;
   align-items: center;
   margin: auto;
-
-  .main_container {
-    position: relative;
-    z-index: 10;
-    padding: 3rem 0;
-    margin: 7rem 0 0 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 90vw;
-    max-width: 1150px;
-    background: rgba(255, 255, 255, 0.25);
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-    backdrop-filter: blur(7px);
-    border-radius: 2em;
-    border: 1px solid rgba(255, 255, 255, 0.18);
+  #main_container {
+    perspective: 1000px;
     @include mobile {
-      flex-direction: column;
+      margin-top: 7rem;
     }
-    .picture {
-      img {
-        width: 15em;
-        border: 0.5em solid rgba(255, 255, 255, 0.25);
-        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-        border-radius: 50%;
-      }
+    @include notMobile {
+      padding : 7rem 3rem 4rem 3rem;
     }
-    .hello-text {
-      margin-left: 2em;
+    .main_container {
+      // transform-style: preserve-3d;
+      position: relative;
+      padding: 3rem 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 90vw;
+      max-width: 1150px;
+      background: rgba(255, 255, 255, 0.25);
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+      backdrop-filter: blur(7px);
+      border-radius: 2em;
+      border: 1px solid rgba(255, 255, 255, 0.18);
       @include mobile {
-        margin-left: 0;
-        display: flex;
         flex-direction: column;
-        align-items: center;
       }
-      .hello {
-        font-size: 3em;
-        @include mobile {
-          font-size: 2rem;
+      .picture {
+        img {
+          width: 15em;
+          border: 0.5em solid rgba(255, 255, 255, 0.25);
+          box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+          border-radius: 50%;
         }
       }
-      .text {
-        font-size: 2em;
+      .hello-text {
+        margin-left: 2em;
+        
         @include mobile {
-          font-size: 1.5rem;
-          margin-left: 1rem;
+          margin-left: 0;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+        .hello {
+          font-size: 3em;
+          @include mobile {
+            font-size: 2rem;
+          }
+        }
+        .text {
+          font-size: 2em;
+          @include mobile {
+            font-size: 1.5rem;
+            margin-left: 1rem;
+          }
         }
       }
     }
@@ -196,7 +206,6 @@ main {
       border-radius: 2em;
       border: 1px solid rgba(255, 255, 255, 0.18);
       height: 20em;
-      
     }
     @include mobile {
       width: 90vw;
@@ -229,8 +238,7 @@ main {
   }
 }
 
-
 .active {
   transform: translate(0);
-  opacity : 1;
+  opacity: 1;
 }

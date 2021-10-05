@@ -23,7 +23,7 @@ window.addEventListener('scroll', function () {
     project = project[0]
 
     let projectPosition = project.getBoundingClientRect().top;
-    let screenPosition = window.innerHeight / 2.5;
+    let screenPosition = window.innerHeight / 2;
 
     if (projectPosition < screenPosition) {
         project.classList.add('active');
@@ -100,3 +100,33 @@ links.addEventListener('click', () => {
     menuBottom.classList.remove('bottomBar');
     header.classList.remove('headerWithMenu');
 })
+
+// 3D effect on hover
+
+const mainContainer = document.getElementById('main_container')
+const card = document.querySelector('.main_container')
+
+const profilePicture = document.querySelector('.picture img')
+const hello = document.querySelector('.hello-text')
+
+mainContainer.addEventListener('mousemove', (e) => {
+
+    let xAxis = (window.innerWidth / 2 - e.pageX) / 20;
+    let yAxis = (window.innerHeight / 2 - e.pageY) / 10;
+    card.style.transform = "rotateY(" + (-xAxis) + "deg) rotateX(" + yAxis + "deg)";
+});
+
+mainContainer.addEventListener('mouseenter', (e) => {
+
+    // profilePicture.style.transform = "translateZ(700px)";
+    card.style.transition = "none";
+    
+});
+
+mainContainer.addEventListener('mouseleave', (e) => {
+
+    card.style.transform = "rotateY(0deg) rotateX(0deg)";
+    card.style.transition = "transform 1s ease-out";
+    
+    // profilePicture.style.transform = "translateZ(0px)";
+});

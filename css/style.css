@@ -385,8 +385,10 @@ html {
   scroll-behavior: smooth;
 }
 
-h1, h2, h3 {
-  color: #E8B9AB;
+h1,
+h2,
+h3 {
+  color: #e8b9ab;
 }
 
 #projects {
@@ -515,11 +517,26 @@ main {
   margin: auto;
 }
 
-main .main_container {
+main #main_container {
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+}
+
+@media screen and (max-width: 900px) {
+  main #main_container {
+    margin-top: 7rem;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  main #main_container {
+    padding: 7rem 3rem 4rem 3rem;
+  }
+}
+
+main #main_container .main_container {
   position: relative;
-  z-index: 10;
   padding: 3rem 0;
-  margin: 7rem 0 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -541,7 +558,7 @@ main .main_container {
 }
 
 @media screen and (max-width: 900px) {
-  main .main_container {
+  main #main_container .main_container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -549,7 +566,7 @@ main .main_container {
   }
 }
 
-main .main_container .picture img {
+main #main_container .main_container .picture img {
   width: 15em;
   border: 0.5em solid rgba(255, 255, 255, 0.25);
   -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
@@ -557,12 +574,12 @@ main .main_container .picture img {
   border-radius: 50%;
 }
 
-main .main_container .hello-text {
+main #main_container .main_container .hello-text {
   margin-left: 2em;
 }
 
 @media screen and (max-width: 900px) {
-  main .main_container .hello-text {
+  main #main_container .main_container .hello-text {
     margin-left: 0;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -577,22 +594,22 @@ main .main_container .hello-text {
   }
 }
 
-main .main_container .hello-text .hello {
+main #main_container .main_container .hello-text .hello {
   font-size: 3em;
 }
 
 @media screen and (max-width: 900px) {
-  main .main_container .hello-text .hello {
+  main #main_container .main_container .hello-text .hello {
     font-size: 2rem;
   }
 }
 
-main .main_container .hello-text .text {
+main #main_container .main_container .hello-text .text {
   font-size: 2em;
 }
 
 @media screen and (max-width: 900px) {
-  main .main_container .hello-text .text {
+  main #main_container .main_container .hello-text .text {
     font-size: 1.5rem;
     margin-left: 1rem;
   }
