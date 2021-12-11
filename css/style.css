@@ -391,7 +391,7 @@ h3 {
   color: #e8b9ab;
 }
 
-#projects {
+h2 {
   padding-top: 8rem;
   width: 90vw;
   max-width: 1300px;
@@ -632,6 +632,20 @@ main #main_container .main_container .hello-text .text {
   }
 }
 
+.about-me__container {
+  margin-top: 5rem;
+  padding: 2rem 1rem;
+  width: 90vw;
+  max-width: 1150px;
+  background: rgba(255, 255, 255, 0.25);
+  -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+          box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  -webkit-backdrop-filter: blur(7px);
+          backdrop-filter: blur(7px);
+  border-radius: 2em;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
 .project {
   opacity: 0;
   -webkit-transform: translateX(-20rem);
@@ -760,6 +774,55 @@ main #main_container .main_container .hello-text .text {
   -webkit-transform: translate(0);
           transform: translate(0);
   opacity: 1;
+}
+
+.skills--container {
+  margin-top: 5rem;
+}
+
+.skills--container li {
+  margin-bottom: 1rem;
+}
+
+.skills--container__bar {
+  width: 50vw;
+  max-width: 70rem;
+  height: 1rem;
+  border-radius: 2rem;
+  background-color: #38023B;
+}
+
+.skills--container__bar__positionning {
+  position: relative;
+  top: 0.22rem;
+  left: 0.22rem;
+  height: 0.6rem;
+  border-radius: 1rem;
+  background-color: #E8B9AB;
+}
+
+.skills--container__bar__html {
+  width: 93%;
+}
+
+.skills--container__bar__css {
+  width: 90%;
+}
+
+.skills--container__bar__vanilla {
+  width: 65%;
+}
+
+.skills--container__bar__vue {
+  width: 50%;
+}
+
+.skills--container__bar__node {
+  width: 45%;
+}
+
+.skills--container__bar__mysql {
+  width: 50%;
 }
 
 footer {

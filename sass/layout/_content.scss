@@ -10,7 +10,7 @@ h3 {
   color: #e8b9ab;
 }
 
-#projects {
+h2 {
   padding-top: 8rem;
   width: 90vw;
   max-width: 1300px;
@@ -27,7 +27,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  
+
   @include mobile {
     overflow-x: hidden;
   }
@@ -118,7 +118,7 @@ main {
       margin-top: 7rem;
     }
     @include notMobile {
-      padding : 7rem 3rem 4rem 3rem;
+      padding: 7rem 3rem 4rem 3rem;
     }
     .main_container {
       position: relative;
@@ -175,6 +175,20 @@ main {
       }
     }
   }
+}
+
+//About me
+
+.about-me__container {
+  margin-top: 5rem;
+  padding: 2rem 1rem;
+  width: 90vw;
+  max-width: 1150px;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(7px);
+  border-radius: 2em;
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 //Projets
@@ -247,4 +261,46 @@ main {
 .active {
   transform: translate(0);
   opacity: 1;
+}
+
+//Skills
+
+.skills--container {
+  margin-top : 5rem;
+  li {
+    margin-bottom : 1rem;
+  }
+  &__bar {
+    width : 50vw;
+    max-width: 70rem;
+    height : 1rem;
+    border-radius: 2rem;
+    background-color: $color-primary;
+    &__positionning {
+      position: relative;
+      top : 0.22rem;
+      left : 0.22rem;
+      height : 0.6rem;
+      border-radius: 1rem;
+      background-color: $color-accent;
+    }
+    &__html {
+      width : 93%;
+    }
+    &__css {
+      width : 90%;
+    }
+    &__vanilla {
+      width : 65%;
+    }
+    &__vue {
+      width : 50%;
+    }
+    &__node {
+      width : 45%;
+    }
+    &__mysql {
+      width : 50%;
+    }
+  }
 }

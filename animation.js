@@ -116,9 +116,9 @@ mainContainer.addEventListener('mousemove', (e) => {
     let yAxis = (window.innerHeight / 3 - e.pageY) / 30;
     card.style.transform = "rotateY(" + (-xAxis) + "deg) rotateX(" + yAxis + "deg)";
     card.style.transition = "transform 0.5s ease-out";
-    profilePicture.style.transform = "rotateY(" + (-xAxis) + "deg) rotateX(" + yAxis + "deg) translateZ(120px)";
-    hello.style.transform = "rotateY(" + (-xAxis) + "deg) rotateX(" + yAxis + "deg) translateZ(150px)";
-    text.style.transform = "rotateY(" + (-xAxis) + "deg) rotateX(" + yAxis + "deg) translateZ(100px)";
+    // profilePicture.style.transform = "rotateY(" + (-xAxis / 2) + "deg) rotateX(" + (yAxis) + "deg) translateZ(120px)";
+    hello.style.transform = "rotateY(" + (-xAxis / 2) + "deg) rotateX(" + (yAxis) + "deg) translateZ(150px)";
+    text.style.transform = "rotateY(" + (-xAxis / 2) + "deg) rotateX(" + (yAxis) + "deg) translateZ(100px)";
 });
 
 mainContainer.addEventListener('mouseleave', (e) => {
@@ -126,8 +126,8 @@ mainContainer.addEventListener('mouseleave', (e) => {
     card.style.transform = "rotateY(0deg) rotateX(0deg)";
     card.style.transition = "transform 1s ease-out";
     
-    profilePicture.style.transform = "translate(0)";
-    profilePicture.style.transition = "transform .5s ease-out";
+    // profilePicture.style.transform = "translate(0)";
+    // profilePicture.style.transition = "transform .5s ease-out";
     hello.style.transform = "translate(0)";
     hello.style.transition = "transform .5s ease-out";
     text.style.transform = "translate(0)";
