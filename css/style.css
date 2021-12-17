@@ -646,6 +646,10 @@ main #main_container .main_container .hello-text .text {
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
+.about-me__container p {
+  text-align: justify;
+}
+
 .project {
   opacity: 0;
   -webkit-transform: translateX(-20rem);

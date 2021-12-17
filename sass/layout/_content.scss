@@ -189,6 +189,9 @@ main {
   backdrop-filter: blur(7px);
   border-radius: 2em;
   border: 1px solid rgba(255, 255, 255, 0.18);
+  p {
+    text-align: justify;
+  }
 }
 
 //Projets
