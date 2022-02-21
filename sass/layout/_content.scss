@@ -198,7 +198,6 @@ main {
 .project {
   opacity: 0;
   transform: translateX(-20rem);
-  height: 50vh;
   width: 90vw;
   max-width: 1300px;
   display: flex;
@@ -206,12 +205,12 @@ main {
   scroll-snap-align: start;
   margin-top: 3em;
   transition: transform 1s ease-out, opacity 1s ease-out;
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4.5px);
+  border-radius: 2em;
+  border: 1px solid rgba(255, 255, 255, 0.18);
   @include mobile {
-    background: rgba(255, 255, 255, 0.15);
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-    backdrop-filter: blur(4.5px);
-    border-radius: 2em;
-    border: 1px solid rgba(255, 255, 255, 0.18);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -222,27 +221,25 @@ main {
     justify-content: center;
     margin-left: 0.5em;
     padding-inline: 1em;
-    @include notMobile {
-      background: rgba(255, 255, 255, 0.15);
-      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-      backdrop-filter: blur(4.5px);
-      border-radius: 2em;
-      border: 1px solid rgba(255, 255, 255, 0.18);
-      height: 20em;
-    }
+    // @include notMobile {
+    //   background: rgba(255, 255, 255, 0.15);
+    //   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    //   backdrop-filter: blur(4.5px);
+    //   border-radius: 2em;
+    //   border: 1px solid rgba(255, 255, 255, 0.18);
+    //   height: 20em;
+    // }
     @include mobile {
       width: 90vw;
+      margin-bottom: 1rem;
     }
   }
   img {
     height: 20em;
     border-radius: 2em;
-    // margin: 2em 2em 0 2em;
-    @include notMobile {
-      margin: 0 2em;
-    }
+    margin : 1.5rem 2rem;
     @include mobile {
-      // margin-top: 2rem;
+      margin-top: 2rem;
       width: 70vw;
       max-width: 25rem;
       height: auto;
@@ -269,41 +266,24 @@ main {
 //Skills
 
 .skills--container {
+  width : 60vw;
+  max-width: 40rem;
+  display: flex;
+  justify-content: space-between;
+  color: $color-accent;
+  font-size : 1.6rem;
   margin-top : 5rem;
   li {
     margin-bottom : 1rem;
-  }
-  &__bar {
-    width : 50vw;
-    max-width: 70rem;
-    height : 1rem;
-    border-radius: 2rem;
-    background-color: $color-primary;
-    &__positionning {
-      position: relative;
-      top : 0.22rem;
-      left : 0.22rem;
-      height : 0.6rem;
-      border-radius: 1rem;
-      background-color: $color-accent;
-    }
-    &__html {
-      width : 93%;
-    }
-    &__css {
-      width : 90%;
-    }
-    &__vanilla {
-      width : 65%;
-    }
-    &__vue {
-      width : 50%;
-    }
-    &__node {
-      width : 45%;
-    }
-    &__mysql {
-      width : 50%;
+    position: relative;
+    &::after {
+      content : "";
+      position: absolute;
+      bottom : 0;
+      width : 3rem;
+      height: 3px;
+      background-color: $color-secondary;
     }
   }
+  
 }

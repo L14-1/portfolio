@@ -363,10 +363,10 @@ header #links::before {
 }
 
 .headerWithMenu {
-  height: 30vh;
+  height: 20rem;
   background-color: rgba(255, 255, 255, 0.7);
-  -webkit-transition: height 1s ease-out, background-color 1s ease-out;
-  transition: height 1s ease-out, background-color 1s ease-out;
+  -webkit-transition: height 0.6s ease-out, background-color 0.6s ease-out;
+  transition: height 0.6s ease-out, background-color 0.6s ease-out;
 }
 
 @media screen and (max-width: 900px) {
@@ -374,8 +374,8 @@ header #links::before {
     height: 100vh;
     width: 100vw;
     top: 0;
-    -webkit-transition: height 1s ease-out, top 1s ease-out, width 1s ease-out;
-    transition: height 1s ease-out, top 1s ease-out, width 1s ease-out;
+    -webkit-transition: height 0.3s ease-out, top 0.3s ease-out, width 0.3s ease-out;
+    transition: height 0.3s ease-out, top 0.3s ease-out, width 0.3s ease-out;
   }
 }
 
@@ -654,7 +654,6 @@ main #main_container .main_container .hello-text .text {
   opacity: 0;
   -webkit-transform: translateX(-20rem);
           transform: translateX(-20rem);
-  height: 50vh;
   width: 90vw;
   max-width: 1300px;
   display: -webkit-box;
@@ -669,17 +668,17 @@ main #main_container .main_container .hello-text .text {
   transition: opacity 1s ease-out, -webkit-transform 1s ease-out;
   transition: transform 1s ease-out, opacity 1s ease-out;
   transition: transform 1s ease-out, opacity 1s ease-out, -webkit-transform 1s ease-out;
+  background: rgba(255, 255, 255, 0.15);
+  -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+          box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  -webkit-backdrop-filter: blur(4.5px);
+          backdrop-filter: blur(4.5px);
+  border-radius: 2em;
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 @media screen and (max-width: 900px) {
   .project {
-    background: rgba(255, 255, 255, 0.15);
-    -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-    -webkit-backdrop-filter: blur(4.5px);
-            backdrop-filter: blur(4.5px);
-    border-radius: 2em;
-    border: 1px solid rgba(255, 255, 255, 0.18);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -708,38 +707,22 @@ main #main_container .main_container .hello-text .text {
   padding-inline: 1em;
 }
 
-@media screen and (min-width: 900px) {
-  .project_text {
-    background: rgba(255, 255, 255, 0.15);
-    -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-    -webkit-backdrop-filter: blur(4.5px);
-            backdrop-filter: blur(4.5px);
-    border-radius: 2em;
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    height: 20em;
-  }
-}
-
 @media screen and (max-width: 900px) {
   .project_text {
     width: 90vw;
+    margin-bottom: 1rem;
   }
 }
 
 .project img {
   height: 20em;
   border-radius: 2em;
-}
-
-@media screen and (min-width: 900px) {
-  .project img {
-    margin: 0 2em;
-  }
+  margin: 1.5rem 2rem;
 }
 
 @media screen and (max-width: 900px) {
   .project img {
+    margin-top: 2rem;
     width: 70vw;
     max-width: 25rem;
     height: auto;
@@ -781,52 +764,31 @@ main #main_container .main_container .hello-text .text {
 }
 
 .skills--container {
+  width: 60vw;
+  max-width: 40rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #E8B9AB;
+  font-size: 1.6rem;
   margin-top: 5rem;
 }
 
 .skills--container li {
   margin-bottom: 1rem;
-}
-
-.skills--container__bar {
-  width: 50vw;
-  max-width: 70rem;
-  height: 1rem;
-  border-radius: 2rem;
-  background-color: #38023B;
-}
-
-.skills--container__bar__positionning {
   position: relative;
-  top: 0.22rem;
-  left: 0.22rem;
-  height: 0.6rem;
-  border-radius: 1rem;
-  background-color: #E8B9AB;
 }
 
-.skills--container__bar__html {
-  width: 93%;
-}
-
-.skills--container__bar__css {
-  width: 90%;
-}
-
-.skills--container__bar__vanilla {
-  width: 65%;
-}
-
-.skills--container__bar__vue {
-  width: 50%;
-}
-
-.skills--container__bar__node {
-  width: 45%;
-}
-
-.skills--container__bar__mysql {
-  width: 50%;
+.skills--container li::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 3rem;
+  height: 3px;
+  background-color: #7180AC;
 }
 
 footer {
