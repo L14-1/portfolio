@@ -62,6 +62,21 @@ window.addEventListener('scroll', function () {
     }
 })
 
+window.addEventListener('scroll', function () {
+    let project = document.getElementsByClassName('project');
+
+    project = project[3]
+
+    let projectPosition = project.getBoundingClientRect().top;
+    let screenPosition = window.innerHeight / 2.3;
+
+    if (projectPosition < screenPosition) {
+        project.classList.add('active');
+    } else {
+        project.classList.remove('active');
+    }
+})
+
 // Hamburger menu
 
 const menu = document.getElementById('menu')
