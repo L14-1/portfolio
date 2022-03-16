@@ -103,7 +103,7 @@ header {
 
 .headerWithMenu {
   height: 20rem;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: white;
   transition: height 0.6s ease-out, background-color 0.6s ease-out;
   @include mobile {
     height: 100vh;
