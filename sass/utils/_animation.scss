@@ -224,7 +224,12 @@
     70% {
         content : '';
     }
-
+    80% {
+        content : '';
+    }
+    90% {
+        content : '';
+    }
     100% {
         content : '';
     }
@@ -232,7 +237,7 @@
 
 @keyframes cursorAnim {
     0% {
-		opacity : 0
+		opacity : 0;
 	}
 	100% {
 		opacity : 1;

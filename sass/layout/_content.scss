@@ -22,7 +22,6 @@ body {
         }
     
         .spacer {
-            // aspect-ratio: 960/700;
             width : 100vw;
             height : 20rem;
             background-repeat: no-repeat;
@@ -64,8 +63,8 @@ body {
                     display : flex;
                     align-items : center;
                     justify-content: center;
-                    padding-top : 3rem;
-                    padding-bottom : 1rem;
+                    padding : 3rem 2rem 1rem 2rem;
+                    flex-wrap: wrap;
                     width : 100%;
                     .script-text {
                         display: flex;
@@ -73,12 +72,16 @@ body {
                         color : black;
                         font-weight: 400;
                         &::after {
+                            content : 'Html, Css, JavaScript, Vue.js, Node.js, MySql';
                             margin-left : 6px;
                             display : flex;
-                            content : '';
                             font-weight: 600;
                             color : #800080;
-                            animation : textAnim linear 12s infinite;
+                            // animation : textAnim 12s infinite;
+                            animation-name: textAnim;
+                            animation-duration: 12s;
+                            animation-iteration-count: infinite;
+                            animation-delay: 0.01s;
                         }
                     }
                     .cursor {

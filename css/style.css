@@ -257,6 +257,12 @@ html {
   70% {
     content: '';
   }
+  80% {
+    content: '';
+  }
+  90% {
+    content: '';
+  }
   100% {
     content: '';
   }
@@ -476,6 +482,12 @@ html {
   70% {
     content: '';
   }
+  80% {
+    content: '';
+  }
+  90% {
+    content: '';
+  }
   100% {
     content: '';
   }
@@ -634,8 +646,9 @@ body main .container .inside-container .text-moving {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 3rem;
-  padding-bottom: 1rem;
+  padding: 3rem 2rem 1rem 2rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   width: 100%;
 }
 
@@ -649,15 +662,21 @@ body main .container .inside-container .text-moving .script-text {
 }
 
 body main .container .inside-container .text-moving .script-text::after {
+  content: 'Html, Css, JavaScript, Vue.js, Node.js, MySql';
   margin-left: 6px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  content: '';
   font-weight: 600;
   color: #800080;
-  -webkit-animation: textAnim linear 12s infinite;
-          animation: textAnim linear 12s infinite;
+  -webkit-animation-name: textAnim;
+          animation-name: textAnim;
+  -webkit-animation-duration: 12s;
+          animation-duration: 12s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-delay: 0.01s;
+          animation-delay: 0.01s;
 }
 
 body main .container .inside-container .text-moving .cursor {
