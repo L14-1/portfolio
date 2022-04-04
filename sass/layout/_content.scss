@@ -22,13 +22,14 @@ body {
         }
     
         .spacer {
-            aspect-ratio: 960/700;
-            width : 100%;
+            // aspect-ratio: 960/700;
+            width : 100vw;
+            height : 20rem;
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
             @include tablet {
-                aspect-ratio: 960/300;
+                height : 30rem;
             }
         }
     
