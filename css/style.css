@@ -574,7 +574,7 @@ body main .spacer {
   background-size: cover;
 }
 
-@media screen and (min-width: 550px) {
+@media screen and (min-width: 650px) {
   body main .spacer {
     aspect-ratio: 960/300;
   }
@@ -584,7 +584,7 @@ body main .layer1 {
   background-image: url("/svg/layered-waves-haikei.svg");
 }
 
-@media screen and (min-width: 550px) {
+@media screen and (min-width: 650px) {
   body main .layer1 {
     background-image: url("/svg/layered-waves-haikei-tablet.svg");
   }
@@ -594,7 +594,7 @@ body main .layer2 {
   background-image: url("/svg/layered-waves-haikei-reverse.svg");
 }
 
-@media screen and (min-width: 550px) {
+@media screen and (min-width: 650px) {
   body main .layer2 {
     background-image: url("/svg/layered-waves-haikei-reverse-tablet.svg");
   }
@@ -604,7 +604,7 @@ body main .layer3 {
   background-image: url("/svg/layered-waves-haikei-experience.svg");
 }
 
-@media screen and (min-width: 550px) {
+@media screen and (min-width: 650px) {
   body main .layer3 {
     background-image: url("/svg/layered-waves-haikei-experience-tablet.svg");
   }
@@ -720,7 +720,7 @@ body main .container-black .experience-container .experience .experience-photo {
           align-items: center;
 }
 
-@media screen and (min-width: 550px) {
+@media screen and (min-width: 650px) {
   body main .container-black .experience-container .experience .experience-photo {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -735,7 +735,7 @@ body main .container-black .experience-container .experience .experience-photo .
   margin: 2rem 0;
 }
 
-@media screen and (min-width: 550px) {
+@media screen and (min-width: 650px) {
   body main .container-black .experience-container .experience .experience-photo .pic-container img {
     margin: 1rem 5rem 1rem 2rem;
   }
@@ -751,7 +751,7 @@ body main .container-black .experience-container .experience .experience-photo a
   margin-top: 2rem;
 }
 
-@media screen and (min-width: 550px) {
+@media screen and (min-width: 650px) {
   body main .container-black .experience-container .experience .experience-photo a {
     margin-top: 0;
     margin-left: 2rem;
