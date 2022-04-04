@@ -1,94 +1,240 @@
-@keyframes floatingC1 {
-    0%   {
-        top: 2rem;
-        left: -10rem;
+@keyframes textGradient {
+    0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@keyframes textAnim {
+    0% {
+		content : '';
+	}
+    1% {
+		content : 'H';
+	}
+	2% {
+		content : 'Ht';
+	}
+    3% {
+		content : 'Htm';
+	}
+	4% {
+		content : 'Html';
+	}
+    5% {
+		content : 'Htm';
+	}
+    6% {
+		content : 'Ht';
+	}
+    7% {
+		content : 'H';
+	}
+    8% {
+		content : '';
+	}
+    9% {
+		content : 'C';
+	}
+    10% {
+		content : 'Cs';
+	}
+    11% {
+		content : 'Css';
+	}
+    12% {
+		content : 'Cs';
+	}
+    13% {
+		content : 'C';
+	}
+    14% {
+		content : '';
+	}
+    15% {
+		content : 'J';
+	}
+    16% {
+		content : 'Ja';
+	}
+    17% {
+		content : 'Jav';
+	}
+    18% {
+		content : 'Java';
+	}
+    19% {
+		content : 'JavaS';
+	}
+    20% {
+		content : 'JavaSc';
+	}
+    21% {
+		content : 'JavaScr';
+	}
+    22% {
+		content : 'JavaScri';
+	}
+    23% {
+		content : 'JavaScrip';
+	}
+    24% {
+		content : 'JavaScript';
+	}
+    25% {
+		content : 'JavaScrip';
+	}
+    26% {
+		content : 'JavaScri';
+	}
+    27% {
+		content : 'JavaScr';
+	}
+    28% {
+		content : 'JavaSc';
+	}
+    29% {
+		content : 'JavaS';
+	}
+    30% {
+		content : 'Java';
+	}
+    31% {
+		content : 'Jav';
+	}
+    32% {
+		content : 'Ja';
+	}
+    33% {
+		content : 'J';
+	}
+    34% {
+		content : '';
+	}
+    35% {
+		content : 'V';
+	}
+    36% {
+		content : 'Vu';
+	}
+    37% {
+		content : 'Vue';
+	}
+    38% {
+		content : 'Vue.';
+	}
+    39% {
+		content : 'Vue.j';
+	}
+    40% {
+		content : 'Vue.js';
+	}
+    41% {
+		content : 'Vue.j';
+	}
+    42% {
+		content : 'Vue.';
+	}
+    43% {
+		content : 'Vue';
+	}
+    44% {
+		content : 'Vu';
+	}
+    45% {
+		content : 'V';
+	}
+    46% {
+        content : '';
     }
-    25%  {
-        top: 8rem;
-        left: 13vw;
+    47% {
+        content : 'N';
     }
-    50%  {
-        top: 16rem;
-        left: 6vw;
+    48% {
+        content : 'No';
     }
+    49% {
+        content : 'Nod';
+    }
+    50% {
+        content : 'Node';
+    }
+    51% {
+        content : 'Node.';
+    }
+    52% {
+        content : 'Node.j';
+    }
+    53% {
+        content : 'Node.js';
+    }
+    54% {
+        content : 'Node.j';
+    }
+    55% {
+        content : 'Node.';
+    }
+    56% {
+        content : 'Node';
+    }
+    57% {
+        content : 'Nod';
+    }
+    58% {
+        content : 'No';
+    }
+    59% {
+        content : 'N';
+    }
+    60% {
+        content : '';
+    }
+    61% {
+        content : 'M';
+    }
+    62% {
+        content : 'My';
+    }
+    63% {
+        content : 'MyS';
+    }
+    64% {
+        content : 'MySq';
+    }
+    65% {
+        content : 'MySql';
+    }
+    66% {
+        content : 'MySq';
+    }
+    67% {
+        content : 'MyS';
+    }
+    68% {
+        content : 'My';
+    }
+    69% {
+        content : 'M';
+    }
+    70% {
+        content : '';
+    }
+
     100% {
-        top: 0;
-        left: 2vw;
+        content : '';
     }
 }
 
-@keyframes floatingC2 {
-    0%   {
-        top: 35rem;
-        right: 0;
-    }
-    25%  {
-        top: 40rem;
-        right: 15vw;
-    }
-    50%  {
-        top: 55rem;
-        right: 20vw;
-    }
-    100% {
-        top: 45rem;
-        right: 10vw;
-    }
-}
-
-@keyframes floatingC4 {
-    0%   {
-        top: 95rem;
-        right: 5vw;
-    }
-    25%  {
-        top: 85rem;
-        right: 20vw;
-    }
-    50%  {
-        top: 95rem;
-        right: 15vw;
-    }
-    100% {
-        top: 85rem;
-        right: 5vw;
-    }
-}
-
-@keyframes floatingC3 {
-    0%   {
-        top: 65rem;
-        left: 10vw;
-    }
-    25%  {
-        top: 58rem;
-        left: 22vw;
-    }
-    50%  {
-        top: 47rem;
-        left: 12vw;
-    }
-    100% {
-        top: 54rem;
-        left: 3vw;
-    }
-}
-
-@keyframes floatingC5 {
-    0%   {
-        bottom: 0;
-        left: -2rem;;
-    }
-    25%  {
-        bottom: 30rem;
-        left: 40vw;
-    }
-    50%  {
-        bottom: 55rem;
-        left: 19vw;
-    }
-    100% {
-        bottom: 32rem;
-        left: 8vw;
-    }
+@keyframes cursorAnim {
+    0% {
+		opacity : 0
+	}
+	100% {
+		opacity : 1;
+	}
 }

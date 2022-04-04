@@ -1,201 +1,149 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="fr">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="description" content="Développeur Web de Grenoble, je vous présentes mon portfolio. Ici vous pourrez trouver un résumé de mes réalisations ainsi que de l'ensemble de mes compétences ( Html, Css, Sass, JavaScript, Vue.js, Node.js et MySql )">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5Q8TNBLCM7"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-5Q8TNBLCM7');
-    </script>
-    <script src="https://kit.fontawesome.com/a2f4b8af3a.js" crossorigin="anonymous"></script>
+    <meta name="author" content="Nicolas Maitre">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-    <link rel="shortcut icon" href="img/favicon.ico" />
-    <title>Nicolas Maitre - développeur web Grenoble</title>
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet"
+    >
+    <script src="https://kit.fontawesome.com/58c6afc378.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/style.css" />
+    <title>Nicolas Maitre</title>
 </head>
-
 <body>
-    <header id="header" class="">
-        <div class="header-container">
-            <div class="logo">
-                <div class="logo_left">
-                    NM
-                </div>
-                <div class="logo_right">
-                    <div class="name">
-                        Nicolas
-                    </div>
-                    <div class="surname">
-                        Maitre
-                    </div>
-                </div>
-            </div>
+    <header id="header">
+        <div class="text-container">
+            <span>NicolasMaitre.</span>
         </div>
-        <div id="menu">
-            <div class="menuBar" id="menuTop"></div>
-            <div class="menuBar" id="menuMiddle"></div>
-            <div class="menuBar" id="menuBottom"></div>
-        </div>
-        <div id="links">
-            <a href="#about-me" class="projectsLink">A propos</a>
-            <a href="#projects" class="projectsLink">Mes projets</a>
-            <a href="#skills" class="projectsLink">Mes compétences</a>
-        </div>
+        <!-- <div id="links" class="link-container">
+            <a href="tel:0651701586">
+                <i class="fas fa-phone-alt"></i>
+            </a>
+            <a href="mailto:nico.maitre@laposte.net">
+                <i class="fas fa-envelope"></i>
+            </a>
+        </div> -->
     </header>
-    <div class="circle c1" id="c1"></div>
-    <div class="circle c2" id="c2"></div>
-    <div class="circle c3" id="c3"></div>
-    <div class="circle c4" id="c4"></div>
-    <div class="circle c5" id="c5"></div>
+
     <main>
-        <div id="main_container">
-            <div class="main_container" id="card">
-                <div class="picture" id="picture">
-                    <img src="img/image1-modified.webp" alt="photo de profil de Nicolas Maitre" />
+        <div class="spacer layer1" style="margin-top : 50vh"></div>
+
+        <section class="container">
+            <div class="inside-container">
+                <h2>Compétences</h2>
+
+                <div class="text-moving">
+                    <div class="script-text">J'utilise</div>
+                    <div class="cursor"></div>
                 </div>
-                <div class="hello-text">
-                    <h1 class="hello" id="hello">
-                        Nicolas Maitre
-                    </h1>
-                    <div class="text" id="text">
-                        Bonjour et bienvenue sur mon portfolio ! 
+            </div>
+        </section>
+
+        <div class="spacer layer2"></div>
+        
+        <section class="container-black">
+            <div class="inside-container">
+                <h2>Expériences</h2>
+
+                <div class="experience-container">
+                    <div class="experience">
+                        <div class="experience-title">
+                            <h3>Julien Patane</h3>
+                            <h4>Mars 2022</h4>
+                        </div>
+                        <div class="experience-photo">
+                            <div class="pic-container">
+                                    <img src="/svg/Logo.svg" alt="Logo julien Patane">
+                            </div>
+                            <p>Réalisation en Vue.js d'un sitre vitrine pour le compte d'un coach sportif. Ce projet à été réalisé d'après la maquette d'un ux/ui designer.</p>
+                            <a href="https://l14-1.github.io/JulienPatane/#/" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="experience">
+                        <div class="experience-title">
+                            <h3>Formation OpenClassrooms</h3>
+                            <h4>2021 / 2022</h4>
+                        </div>
+                        <div class="experience-photo">
+                            <div class="pic-container">
+                                <img src="/img/icon-left-font.png" alt="logo groupomania">
+                            </div>
+                            <p>Conception d'un réseau social d'entreprise. Réalisé avec Vue.js, node.js et MySql.</p>
+                        </div>
+                        <div class="experience-photo">
+                            <div class="pic-container">
+                                <img src="/img/PiiquanteLogo.png" alt="logo piiquante">
+                            </div>
+                            <p>Création d'une api sécurisée pour une application d'avis gastronomique en Node.js, Express et MongoDB. Possibilitée de créer, modifier et liker un avis sur une sauce.</p>
+                        </div>
+                        <div class="experience-photo">
+                            <div class="pic-container">
+                                <img src="/img/orinocoLogo.PNG" alt="logo orinoco">
+                            </div>
+                            <p>Construction d'un site e-commerce en JavaScript. Récupération des articles via une api, système de panier et de checkout. Utilisation de bootstrap.</p>
+                        </div>
+                        <div class="experience-photo">
+                            <div class="pic-container">
+                                <img src="/img/chouetteAgence.png" alt="logo la chouette agence">
+                            </div>
+                            <p>Optimisation d'un site web existant. Analyse de l’état actuel de SEO du site fourni. Amélioration du SEO du site. Comparaison des résultats. </p>
+                        </div>
+                        <div class="experience-photo">
+                            <div class="pic-container">
+                                    <img src="/svg/ohmyfood.svg" alt="logo ohMyFood">
+                            </div>
+                            <p>Réalisation d'un page web avec des animations Css. Utilisation de Sass.</p>
+                            <a href="https://l14-1.github.io/NicolasMaitre_3_03082021/" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                        <div class="experience-photo">
+                            <div class="pic-container">
+                                    <img src="/svg/Reservia.svg" alt="logo reservia">
+                            </div>
+                            <p>Transformation d'un maquette en site web avec Html & Css. Site web full-responsive.</p>
+                            <a href="https://l14-1.github.io/NicolasMaitre_2_20072021/" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-
-        <h2 id="about-me">A propos de moi</h2>
-
-        <section class="about-me__container">
-            <p>
-                Depuis toujours passionné de nouvelles technologies et du web j'ai finalement décidé en juillet 2021 d'entreprendre une formation diplômante en développement web.
-                </br>
-                </br>
-                Dès le début de cette formation j'ai adoré cet environnement ! La possibilité de créer des visuels avec des lignes de codes est tout à fait incroyable !</br>
-                Aujourd'hui j'ai 23 ans, j'habite à Grenoble et j'espère pouvoir continuer cette pratique le plus longtemps possible. 
-                Le fait d'être en perpétuel apprentissage et de savoir qu'au fur et à mesure du temps je pourrai améliorer ma technique et apprendre de nouvelles technologies m'enthousiasme énormément !
-                Je sais que dans ce domaine je ne m'ennuierais jamais car l'environnement du développement web est en perpétuel évolution.
-                </br>
-                </br>
-                Sur mon portfolio vous pouvez trouver un résumé de mes réalisations (vous pouvez cliquer sur l'image pour accéder au projet et/ou aller voir directement le code source sur mon GitHub !) ainsi qu'un résumé de mes compétences.
-            </p>
         </section>
 
-        <h2 id="projects">Mes projets</h2>
+        <div class="spacer layer3"></div>
 
-        <section class="project_container">
-            <article class="project">
-                <div class="project_picture">
-                    <a href="https://l14-1.github.io/NicolasMaitre_2_20072021/" target="_blank"><img
-                            src="img/reservia.webp" alt="capture d'ecran du projet Reservia" /></a>
+        <section class="container">
+            <div class="contact">
+                <div class="profile-pic">
+                    <img src="/img/profil-pic.webp" alt="">
                 </div>
-                <div class="project_text">
-                    <h3 class="project_text_title">
-                        Projet OC - Reservia
-                    </h3>
-                    <div class="project_text_description">
-                        Mon premier projet ! Avec la réalisation de ce site web statique, respectant une maquette,
-                        j'ai tout de suite adoré cet aspect du domaine !
-                    </div>
+                <div class="links">
+                    <a href="tel:0651701586">
+                        <i class="fas fa-phone-alt"></i>
+                    </a>
+                    <a href="mailto:nico.maitre@laposte.net">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://github.com/L14-1">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/nicolasmaitre/">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
                 </div>
-            </article>
-            <article class="project reverse">
-                <div class="project_picture">
-                    <a href="https://l14-1.github.io/NicolasMaitre_3_03082021/" target="_blank"><img
-                            src="img/ohmyfood.webp" alt="capture d'ecran du projet Reservia" /></a>
-                </div>
-                <div class="project_text">
-                    <h3 class="project_text_title">
-                        Projet OC - OhMyFood
-                    </h3>
-                    <div class="project_text_description">
-                        Le projet OhMyFood etait centré autour des animations. J'ai pu améliorer ma technique en
-                        utilisant Sass
-                        et en découvrant le merveilleux univers des animations !
-                    </div>
-                </div>
-            </article>
-            <article class="project">
-                <div class="project_picture">
-                    <a href="index.html" target="_blank"><img src="img/portfolio.webp"
-                            alt="capture d'ecran du projet Reservia" /></a>
-                </div>
-                <div class="project_text">
-                    <h3 class="project_text_title">
-                        Projet perso - Portfolio
-                    </h3>
-                    <div class="project_text_description">
-                        C'est pour m'entraîner et créer un produit de mon imagination que j'ai eu l'idée de créer ce
-                        portfolio.
-                        Un passe temps agréable et ludique. J'espère qu'il vous plait !
-                    </div>
-                </div>
-            </article>
-            <article class="project reverse">
-                <div class="project_picture">
-                    <a href="https://l14-1.github.io/JulienPatane/#/" target="_blank"><img
-                            src="img/julienPatane.PNG" alt="capture d'ecran du projet Julien Patane" /></a>
-                </div>
-                <div class="project_text">
-                    <h3 class="project_text_title">
-                        Projet - Julien Patane
-                    </h3>
-                    <div class="project_text_description">
-                        Réalisation en Vue.js d'un sitre vitrine pour le compte d'un coach sportif. Ce projet à été réalisé d'après la maquette d'un ux/ui designer.
-                    </div>
-                </div>
-            </article>
-        </section>
-
-        <h2 id="skills">Mes compétences</h2>
-
-        <section class="skills--container">
-            <ul>
-                <li>
-                    <p>HTML</p>
-                </li>
-                <li>
-                    <p>CSS / SASS</p>
-                </li>
-                <li>
-                    <p>Vanilla Js</p>
-                </li>
-            </ul>
-            <ul>
-                <li>
-                    <p>Vue</p>
-                </li>
-                <li>
-                    <p>Node</p>
-                </li>
-                <li>
-                    <p>MySql</p>
-                </li>
-            </ul>
+            </div>
         </section>
     </main>
 
-    <footer id="footer">
-        <p id="contactText">Contactez moi !</p>
-        <div class="social" id="social">
-            <a href="https://github.com/L14-1"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/nicolasmaitre/"><i class="fab fa-linkedin"></i></a>
-            <a href="mailto:nico.maitre@laposte.net"><i class="fas fa-envelope"></i></i></a>
-        </div>
-    </footer>
-
-    <script src="animation.js"></script>
+    <script src="main.js"></script>
 
 </body>
-
 </html>

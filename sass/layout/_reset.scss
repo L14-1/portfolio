@@ -7,3 +7,9 @@
     list-style: none;
     text-decoration: none;
 }
+
+html {
+    overflow-x: hidden;
+    width: 100vw;
+    scroll-behavior: smooth;
+}

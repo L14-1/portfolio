@@ -1,10 +1,10 @@
-@mixin mobile {
-    @media screen and (max-width: 900px) {
+@mixin tablet {
+    @media screen and (min-width: 550px) {
         @content;
     }
 }
 
-@mixin notMobile {
+@mixin pc {
     @media screen and (min-width: 900px) {
         @content;
     }
