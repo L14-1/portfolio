@@ -1,3 +1,14 @@
+// Animation "NicolasMAitre."
+
+@keyframes openingPage {
+    0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
 @keyframes textGradient {
     0% {
 		background-position: 0% 50%;
@@ -9,6 +20,18 @@
 		background-position: 0% 50%;
 	}
 }
+
+@keyframes scrollDownMovement {
+    0% {
+		transform: translateY(-1rem);
+	}
+	100% {
+		transform: translateY(1rem);
+	}
+}
+
+
+// Animation compétences
 
 @keyframes textAnim {
     0% {

@@ -14,6 +14,7 @@
     background-color : black;
     
     .text-container {
+        position: relative;
         font-weight : 800;
         font-style: italic;
         background: linear-gradient(45deg, #800080, #ffc0cb);
@@ -21,23 +22,6 @@
         -webkit-background-clip: text;
         background-size: 300% 300%;
         animation: textGradient 5s ease infinite;
+        animation : openingPage 3s ease-out;
     }
-    
-    // .link-container {
-    //     z-index : 1001;
-    //     width : 100vw;
-    //     height : 30px;
-    //     display: flex;
-    //     justify-content: space-between;
-    //     align-items : center;
-    //     position : fixed;
-    //     top : 0;
-    //     padding : 1.5rem 2rem;
-    //     font-size : 0;
-    //     // border-bottom : 1px solid #fff;
-    //     transition : font-size ease 0.3s;
-    //     a {
-    //         color : white;
-    //     }
-    // }
 }
